@@ -9,4 +9,9 @@ spring:
     consumer:
       group-id: notification-service
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 2525
+    username: 4acff0c6c9c7f0
+    password: 1ee5a479800501
