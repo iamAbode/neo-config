@@ -10,8 +10,8 @@ spring:
   mail:
     host: sandbox.smtp.mailtrap.io
     port: 2525
-    username: 5fc33710d69e7e
-    password: 5b2086f7f70850
+    username: 4acff0c6c9c7f0
+    password: 1ee5a479800501
 
 # Kafka Consumer Properties
 spring:
