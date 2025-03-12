@@ -12,15 +12,25 @@ spring:
     hibernate: 
       ddl-auto: none
 
+# account:
+#   api:
+#     services:
+#       customer:
+#         base-url: http://localhost:8081
+#         relative-path: /api/customer?customerId=
+#       transaction:
+#         base-url: http://localhost:8083
+#         relative-path: /api/transaction
+
 #Kafka Properties
-spring:
-  kafka:
-    bootstrap-servers: localhost:9092
-    template:
-      default-topic: account-creation
-    producer:
-      key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+# spring:
+#   kafka:
+#     bootstrap-servers: localhost:9092
+#     template:
+#       default-topic: account-creation
+#     producer:
+#       key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
 springdoc:
   swagger-ui:
