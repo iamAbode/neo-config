@@ -12,15 +12,15 @@ spring:
     hibernate: 
       ddl-auto: none
 
-# account:
-#   api:
-#     services:
-#       customer:
-#         base-url: http://localhost:8081
-#         relative-path: /api/customer?customerId=
-#       transaction:
-#         base-url: http://localhost:8083
-#         relative-path: /api/transaction
+account:
+  api:
+    services:
+      customer:
+        base-url: http://localhost:8081
+        relative-path: /api/customer?customerId=
+      transaction:
+        base-url: http://localhost:8083
+        relative-path: /api/transaction
 
 #Kafka Properties
 # spring:
