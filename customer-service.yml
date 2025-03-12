@@ -17,3 +17,12 @@ springdoc:
     path: /swagger-ui.html
   api-docs:
     path: /api-docs
+
+api:
+  services:
+    account:
+      base-url: http://localhost:8082
+      relative-path: /api/account?customerId=
+    transaction:
+      base-url: http://localhost:8083
+      relative-path: /api/transaction?customerId=
