@@ -5,15 +5,15 @@ spring:
   application: 
     name: identity-service
   datasource:
-    url: jdbc:h2:mem:mydb
+    url: jdbc:h2:mem:identity_service
     username: sa
     password: password
     driverClassName: org.h2.Driver
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
-    h2:
-    console:
-      enabled: true
+  h2:
+  console:
+    enabled: true
   # datasource:
   #   url: jdbc:mysql://localhost:3306/identity_service
   #   username: root

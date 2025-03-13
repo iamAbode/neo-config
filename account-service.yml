@@ -11,9 +11,9 @@ spring:
     driverClassName: org.h2.Driver
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
-    h2:
-    console:
-      enabled: true
+  h2:
+  console:
+    enabled: true
   # datasource:
   #   url: jdbc:mysql://localhost:3306/account_service
   #   username: root
