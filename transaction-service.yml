@@ -14,7 +14,6 @@ spring:
   h2:
   console:
     enabled: true
-
 eureka:
   client:
     serviceUrl:
