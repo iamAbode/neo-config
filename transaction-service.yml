@@ -15,6 +15,11 @@ spring:
   console:
     enabled: true
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://service-registry:8761/eureka/}
+
 springdoc:
   swagger-ui:
     path: /swagger-ui.html

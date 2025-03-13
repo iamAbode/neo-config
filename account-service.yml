@@ -15,6 +15,11 @@ spring:
   console:
     enabled: true
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://service-registry:8761/eureka/}
+
 account:
   api:
     services:
@@ -24,16 +29,6 @@ account:
       transaction:
         base-url: http://localhost:8083
         relative-path: /api/transaction
-
-#Kafka Properties
-# spring:
-#   kafka:
-#     bootstrap-servers: localhost:9092
-#     template:
-#       default-topic: account-creation
-#     producer:
-#       key-serializer: org.apache.kafka.common.serialization.StringSerializer
-#       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
 springdoc:
   swagger-ui:
