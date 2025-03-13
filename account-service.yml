@@ -14,13 +14,6 @@ spring:
   h2:
   console:
     enabled: true
-  # datasource:
-  #   url: jdbc:mysql://localhost:3306/account_service
-  #   username: root
-  #   password: mydb@123
-  # jpa: 
-  #   hibernate: 
-  #     ddl-auto: none
 
 account:
   api:

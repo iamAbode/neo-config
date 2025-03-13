@@ -34,36 +34,36 @@ api:
       relative-path: /api/identity/verify?username=
 
 # Actuator Endpoints
-management:
-  health:
-    circuitbreakers:
-      enabled: true
-  endpoints:
-    web:
-      exposure:
-        include: '*' 
-    health:
-      show-details: always
+# management:
+#   health:
+#     circuitbreakers:
+#       enabled: true
+#   endpoints:
+#     web:
+#       exposure:
+#         include: "*" 
+#     health:
+#       show-details: always
 
-#Resilinece4j Properties
-resilience4j:
-  circuitbreaker:
-    configs:
-      default:
-        registerHealthIndicator: true
-        slidingWindowType: COUNT_BASED
-        slidingWindowSize: 10
-        failureRateThreshold: 50
-        waitDurationInOpenState: 5s
-        permittedNumberOfCallsInHalfOpenState: 3
-        automaticTransitionFromOpenToHalfOpenEnabled: true
-        minimum-number-of-calls: 5
-  timelimiter:
-    configs:
-      default:
-        timeout-duration: 3s
-  retry:
-    configs:
-      default:
-        max-attempts: 3
-        wait-duration: 2s
+# #Resilinece4j Properties
+# resilience4j:
+#   circuitbreaker:
+#     configs:
+#       default:
+#         registerHealthIndicator: true
+#         slidingWindowType: COUNT_BASED
+#         slidingWindowSize: 10
+#         failureRateThreshold: 50
+#         waitDurationInOpenState: 5s
+#         permittedNumberOfCallsInHalfOpenState: 3
+#         automaticTransitionFromOpenToHalfOpenEnabled: true
+#         minimum-number-of-calls: 5
+#   timelimiter:
+#     configs:
+#       default:
+#         timeout-duration: 3s
+#   retry:
+#     configs:
+#       default:
+#         max-attempts: 3
+#         wait-duration: 2s
