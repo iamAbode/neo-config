@@ -24,10 +24,10 @@ account:
   api:
     services:
       customer:
-        base-url: http://localhost:8081
+        base-url: http://customer-service:8081
         relative-path: /api/customer?customerId=
       transaction:
-        base-url: http://localhost:8083
+        base-url: http://transaction-service:8083
         relative-path: /api/transaction
 
 springdoc:
