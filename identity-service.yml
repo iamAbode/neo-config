@@ -5,12 +5,22 @@ spring:
   application: 
     name: identity-service
   datasource:
-    url: jdbc:mysql://localhost:3306/identity_service
-    username: root
-    password: mydb@123
-  jpa: 
-    hibernate: 
-      ddl-auto: none
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    h2:
+    console:
+      enabled: true
+  # datasource:
+  #   url: jdbc:mysql://localhost:3306/identity_service
+  #   username: root
+  #   password: mydb@123
+  # jpa: 
+  #   hibernate: 
+  #     ddl-auto: none
 
 springdoc:
   swagger-ui:
